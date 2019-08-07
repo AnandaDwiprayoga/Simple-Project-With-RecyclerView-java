@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_8dp"
+    android:background="#3D3D3D"
+    android:layout_marginTop="@dimen/_4dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ci_img_designer"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:src="@drawable/designer6"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/_8dp">
+        <TextView
+            android:id="@+id/tv_name_designer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Mohammad Thoha"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/montserratmedium"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_follower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="17k Followers"
+            android:textColor="#FFFEFE"
+            android:fontFamily="@font/loraregular"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@android:color/transparent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ClhotesDetail"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_detail_clothes"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:src="@drawable/produk1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/foto_product" />
+
+    <TextView
+        android:id="@+id/tv_nama_clothes_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Black Hoodie"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="#000000"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:id="@+id/tv_harga_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="IDR 2.000.000"
+        android:layout_marginStart="@dimen/_16dp"
+        android:fontFamily="@font/loraregular"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stock"
+            android:fontFamily="@font/loraregular"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_stock_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            tools:text="100"
+            android:fontFamily="@font/lorabold"
+            android:textSize="16sp"
+            android:textColor="#32944D"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="@string/deskripsi_produck"
+        android:layout_marginStart="@dimen/_16dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_desc_clothes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4dp"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp"
+        tools:text="lorem ipsum dolor sir amet betat soie kita lorem ipsum dolor sir amet betat soie kita lorem ipsum dolor sir amet betat soie kita lorem ipsum dolor sir amet betat soie kita"
+        android:lineSpacingExtra="3sp"
+        android:fontFamily="@font/montserratregular"
+        android:textSize="12sp"
+        android:textColor="#444141"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="@string/size_available"
+        android:layout_marginStart="@dimen/_16dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:orientation="horizontal"
+        android:weightSum="7">
+        <Button
+            android:id="@+id/btn_M"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border_green"
+            android:text="@string/m"/>
+        <Button
+            android:id="@+id/btn_L"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border_green"
+            android:text="@string/l"
+            android:layout_marginStart="@dimen/_4dp"/>
+
+        <Button
+            android:id="@+id/btn_XL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_border_green"
+            android:text="@string/xl"
+            android:layout_marginStart="@dimen/_4dp"/>
+        <Button
+            android:id="@+id/btn_XXL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border_green"
+            android:layout_weight="1"
+            android:text="@string/xxl"
+            android:layout_marginStart="@dimen/_4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:text="@string/designed_by"
+        android:layout_marginStart="@dimen/_16dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_designer_in_clothes"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            tools:src="@drawable/designer1"/>
+
+        <TextView
+            android:id="@+id/tv_namaDesigner_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            tools:text="Abraham Smith"
+            android:fontFamily="@font/montserratsemibold"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="@dimen/_32dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:background="#32944D"
+            android:fontFamily="@font/montserratmedium"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:onClick="backClicked"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_to_wishlist"
+            android:textAllCaps="false"
+            android:background="#32944D"
+            android:fontFamily="@font/montserratmedium"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_marginStart="@dimen/_4dp"
+            android:onClick="addToWishListClicked"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

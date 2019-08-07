@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailDesigner">
+
+    <ImageView
+        android:id="@+id/iv_backImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/lans3"
+        android:contentDescription="@string/foto_designer" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/backImg"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:src="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        tools:src="@drawable/designer3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/buttonContact"
+        app:layout_constraintTop_toBottomOf="@id/backImg">
+
+        <TextView
+            android:id="@+id/tv_namaDesigner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_4dp"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            tools:text="Ronaldo Es Taro" />
+
+        <TextView
+            android:id="@+id/tv_descDesigner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4dp"
+            android:fontFamily="@font/loraregular"
+            android:paddingStart="@dimen/_16dp"
+            android:paddingEnd="@dimen/_16dp"
+            android:textAlignment="center"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            tools:text="Lorem ipsun dolor sir ammet lorem dolor sir amet esta nabe sir komet dolor " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_32dp"
+            android:paddingEnd="@dimen/_16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on_black_30dp"
+                android:contentDescription="@string/icon" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_4dp"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="#242222"
+                android:textSize="16sp"
+                tools:text="Jln Soekarno Hatta malang" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_32dp"
+            android:paddingEnd="@dimen/_16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_email_black_30dp"
+                android:contentDescription="@string/icon" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_4dp"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="#242222"
+                android:textSize="16sp"
+                tools:text="Prayogaananda04@gmail.com" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_32dp"
+            android:paddingEnd="@dimen/_16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_black_30dp"
+                android:contentDescription="@string/icon" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_4dp"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="#242222"
+                android:textSize="16sp"
+                tools:text="08974466922" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/buttonContact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_4dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:background="#0D0D0D"
+        android:fontFamily="@font/montserratregular"
+        android:text="@string/save_contact"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email_me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginStart="@dimen/_4dp"
+        android:background="#0D0D0D"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserratregular"
+        android:textColor="#FFFFFF"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

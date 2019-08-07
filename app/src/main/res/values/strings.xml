@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DicodingTugasAkhir</string>
+    <string name="foto_produk">foto produk</string>
+    <string name="black_zombie">Black Zombie</string>
+    <string name="harga_example">IDR 500.000</string>
+    <string name="jumbotron">jumbotron</string>
+    <string name="premium_collections">Premium Collections</string>
+    <string name="designed_by_famous_disigner">Designed by Famous Disigner</string>
+    <string name="clothes">Clothes</string>
+    <string name="our_designer">Our Designer</string>
+    <string name="my_name">Ananda Dwi Prayoga</string>
+    <string name="desc_foto_saya">foto Ananda Dwi Prayoga</string>
+    <string name="email_saya">Prayogaananda04@gmail.com</string>
+    <string name="foto_product">foto product</string>
+    <string name="stock">Stock :</string>
+    <string name="deskripsi_produck">Deskripsi Produck</string>
+    <string name="size_available">Size Available</string>
+    <string name="add_to_wishlist">Add to wishlist</string>
+    <string name="designed_by">Designed By</string>
+    <string name="xxl">XXL</string>
+    <string name="xl">XL</string>
+    <string name="l">L</string>
+    <string name="m">M</string>
+    <string name="back">Back</string>
+    <string name="foto_designer">foto designer</string>
+    <string name="email_me">Email me</string>
+    <string name="save_contact">Save contact</string>
+    <string name="icon">icon</string>
+    <string name="button_back">button back</string>
+</resources>
